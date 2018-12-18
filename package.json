@@ -1,0 +1,30 @@
+{
+  "name": "react-todo-list-server",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/Genoval13/react-todo-list-server.git"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/Genoval13/react-todo-list-server/issues"
+  },
+  "homepage": "https://github.com/Genoval13/react-todo-list-server#readme",
+  "dependencies": {
+    "body-parser": "^1.18.3",
+    "express": "^4.16.4",
+    "knex": "^0.16.2",
+    "morgan": "^1.9.1",
+    "pg": "^7.7.1"
+  },
+  "devDependencies": {
+    "nodemon": "^1.18.9"
+  }
+}
