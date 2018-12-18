@@ -13,8 +13,11 @@ app.use(bodyParser.json());
 app.use(bodyParser.urlencoded({extended: false}));
 app.disable('x-powered-by'); 
 
-app.get('/', (_req,res) => {
-  res.send('Hey!');
+app.get('/', (_req, res) => {
+  knex.select().table('todo_list')
+    .then((list) => {
+      res.send(list);
+    })
 })
 
 app.listen(PORT, () => {
