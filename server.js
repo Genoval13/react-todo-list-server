@@ -34,6 +34,7 @@ app.post('/post', (req, _res) => {
   }, '*')
   .then(() => {
     res.redirect('/')
+  })
   .catch((err) => {
     next(err);
   })
