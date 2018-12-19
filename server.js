@@ -26,7 +26,7 @@ app.get('/', (_req, res) => {
     })
 })
 
-app.post('/post', (req, res) => {
+app.post('/post', (req, _res) => {
   knex('todo_list')
   .insert({
     name: req.body.name,
@@ -35,7 +35,7 @@ app.post('/post', (req, res) => {
   .catch((err) => {
     next(err);
   })
-  res.send(req.body);
+  .res.redirect('/')
 })
 
 app.listen(PORT, () => {
