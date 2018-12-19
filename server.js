@@ -32,10 +32,10 @@ app.post('/post', (req, _res) => {
     name: req.body.name,
     complete: req.body.complete
   }, '*')
+  .res.redirect('/')
   .catch((err) => {
     next(err);
   })
-  .res.redirect('/')
 })
 
 app.listen(PORT, () => {
