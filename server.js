@@ -27,7 +27,6 @@ app.get('/', (_req, res) => {
 })
 
 app.post('/post', (req, res) => {
-  console.log('We posted!')
   knex('todo_list')
   .insert({
     name: req.body.name,
