@@ -33,8 +33,7 @@ app.post('/post', (req, _res) => {
     complete: req.body.complete
   }, '*')
   .then(() => {
-    res.redirect(200, '/')
-  })
+    res.redirect('/')
   .catch((err) => {
     next(err);
   })
